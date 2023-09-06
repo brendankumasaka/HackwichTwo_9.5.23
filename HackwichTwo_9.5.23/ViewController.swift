@@ -8,8 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
+    //Part 8: This is wehre I want you to declare 3 string variables
+    
+    var myFirstVariable: String = "Wassup"
+    
+    var mySecondVariable = "Everybody"
+    
+    var myThirdVariable: String = "myFirstVariable + mySecondVariable"
+    
+    override func viewDidLoad() {    var _: String = "myFirstVariable + mySecondVariable"
+        
+        
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
@@ -21,6 +31,10 @@ class ViewController: UIViewController {
         
     }
   
+    @IBAction func AnotherButton(_ sender: Any)
+    {
+        print("I did it!")
+    }
     
     
 }
