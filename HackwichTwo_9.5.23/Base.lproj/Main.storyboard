@@ -26,13 +26,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHl-cj-58A">
-                                <rect key="frame" x="101" y="429" width="140" height="35"/>
+                                <rect key="frame" x="114" y="429" width="115" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Another Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Segue Push"/>
                                 <connections>
                                     <action selector="AnotherButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zAY-P4-t5b"/>
                                     <action selector="PressMeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gDK-qI-qhA"/>
+                                    <segue destination="PgR-fh-MfR" kind="show" id="mHn-Cv-1CH"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -43,6 +44,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="361" y="86"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="eZJ-XQ-Pj1">
+            <objects>
+                <viewController id="PgR-fh-MfR" customClass="secondViewController" customModule="HackwichTwo_9_5_23" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j3e-s3-nCt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zLx-Hv-x3d">
+                                <rect key="frame" x="159" y="522" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="avq-0s-gyc">
+                                <rect key="frame" x="175" y="309" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZUG-2F-Xuw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fUk-mp-dbV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8d-ZH-AvV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1167" y="86"/>
         </scene>
     </scenes>
     <resources>
